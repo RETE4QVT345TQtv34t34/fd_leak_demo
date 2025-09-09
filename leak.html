@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+
+<body>
+
+<button id="leak">Run</button>
+<script>
+const worker = new Worker('fdleak_worker.js', { type: 'module' });
+
+document.getElementById("leak").addEventListener("click", _=>worker.postMessage('Hello Worker'));
+</script>
+</body>
+
+</html>
