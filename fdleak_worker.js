@@ -1,4 +1,4 @@
-import createModule from "./fdleak.js";
+import createModule from "./fdleak.mjs";
 
 self.onmessage = (e) => {
   createModule().then((Module) => {
