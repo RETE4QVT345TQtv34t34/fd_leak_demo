@@ -8,6 +8,8 @@
 
 <button id="leak">Run</button>
 <script>
+console.log('ghhga')
+  
 const worker = new Worker('fdleak_worker.js', { type: 'module' });
 
 document.getElementById("leak").addEventListener("click", _=>worker.postMessage('Hello Worker'));
